@@ -1,0 +1,65 @@
+.body{
+    margin: 0px;
+}
+
+.h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.p1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: #f46874;
+}
+.p2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: #e02224;
+}
+
+.lenovo-img{
+    padding-left: 20px;
+    padding-right: 20px;
+    width:200px;
+    height: 110px;
+}
+
+.header{
+    display: flex;
+    background-color: #2a323d;
+    text-align: center;
+    margin: none;
+    border-radius: 10px;
+}
+
+.Scheda-prodotto{
+    display: flex;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+.informazioni{
+    border: 100px;
+    border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nome-laptop{
+    font-size: 40px;
+    letter-spacing: 0px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
