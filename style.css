@@ -24,17 +24,16 @@ body {
     line-height: 1.5;
 }
 
-.h1 {
+.titolo-brand {
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.p1 {
     font-size: 40px;
     color: var(--rosso-chiaro);
 }
 
-.p2 {
+.titolo-brand-accento {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 40px;
     color: var(--rosso);
 }
@@ -61,7 +60,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.Scheda-prodotto {
+.scheda-prodotto {
     display: flex;
     margin: 20px 40px 20px 60px;
 }
@@ -189,8 +188,7 @@ footer p {
 
 
 
-#riga {
-    display: flex;
-    justify-content: center;
-    color: #f46874;
+.titolo-sezione {
+    text-align: center;
+    color: var(--rosso-chiaro);
 }
