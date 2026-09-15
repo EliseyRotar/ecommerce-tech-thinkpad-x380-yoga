@@ -1,65 +1,196 @@
-.body{
-    margin: 0px;
+:root {
+    --rosso: #e02224;
+    --rosso-chiaro: #f46874;
+    --blu: #4f46e5;
+    --blu-scuro: #4338ca;
+    --scuro: #2a323d;
+    --testo: #222;
+    --sfondo: #f5f5f5;
+    --bianco: #ffffff;
 }
 
-.h1{
-    margin-top: 0px;
-    margin-bottom: 0px;
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
-.p1{
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    color: #f46874;
-}
-.p2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    color: #e02224;
+    color: var(--testo);
+    line-height: 1.5;
 }
 
-.lenovo-img{
-    padding-left: 20px;
-    padding-right: 20px;
-    width:200px;
+.h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.p1 {
+    font-size: 40px;
+    color: var(--rosso-chiaro);
+}
+
+.p2 {
+    font-size: 40px;
+    color: var(--rosso);
+}
+
+.lenovo-img {
+    padding: 0 20px;
+    width: 200px;
     height: 110px;
 }
 
-.header{
+.computer-img {
+    padding: 0 20px;
+    width: 600px;
+    height: auto;
+}
+
+.header {
     display: flex;
-    background-color: #2a323d;
+    background-color: var(--scuro);
+    color: var(--bianco);
     text-align: center;
-    margin: none;
+    padding: 15px 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.Scheda-prodotto{
+.Scheda-prodotto {
     display: flex;
-    margin-left: 40px;
-    margin-right: 60px;
+    margin: 20px 40px 20px 60px;
 }
 
-.informazioni{
-    border: 100px;
-    border-color: black;
+.informazioni {
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-.nome-laptop{
-    font-size: 40px;
-    letter-spacing: 0px;
+.nome-laptop {
+    font-size: 36px;
+    letter-spacing: 0;
+    margin: 10px 0;
+}
+
+.tabella-laptop {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+    border: 2px solid var(--blu);
+}
+
+.tabella-laptop td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabella-laptop tr:first-child {
+    background-color: var(--rosso);
+    color: var(--bianco);
+    font-weight: bold;
+}
+
+.tabella-laptop tr:nth-child(even) {
+    background-color: var(--sfondo);
+}
+
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btn-cart,
+
+.btn-cart {
+    color: var(--bianco);
+    background-color: var(--rosso);
+    border: 2px solid var(--rosso);
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 44px;
+    margin: 8px 0 16px;
+}
+
+.btn-cart:hover {
+    background-color: #b91c1c;
+    border-color: #b91c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cart:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-recensione {
+    color: var(--bianco);
+    background-color: var(--rosso);
+    border: 2px solid var(--rosso);
+}
+
+.btn-recensione:hover {
+    background-color: var(--rosso-chiaro);
+    border-color: var(--rosso-chiaro);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-recensione:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    background-color: #222;
-    color: white;
+    background-color: var(--scuro);
+    color: var(--bianco);
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
-    font-family: Arial, sans-serif;
+    margin-top: auto;
+    border-top: 3px solid var(--rosso);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer p {
     margin: 0;
     font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.stelle {
+    text-align: left;
+    font-size: 22px;
+    color: var(--rosso);
+    letter-spacing: 2px;
+    margin: 6px 0 10px;
+    user-select: none;
+}
+
+
+
+
+#riga {
+    display: flex;
+    justify-content: center;
+    color: #f46874;
 }

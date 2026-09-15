@@ -12,7 +12,7 @@
 
     <header class="header">
 
-        <img src="https://logos-world.net/wp-content/uploads/2022/07/Lenovo-Logo.png" class="lenovo-img">
+        <img src="https://logos-world.net/wp-content/uploads/2022/07/Lenovo-Logo.png" alt="Logo Lenovo" class="lenovo-img">
 
         <h1 class="p1"><b>E - Comm</b></h1>
         <h1 class="p2"><b>erce Tech</b></h1>
@@ -21,15 +21,19 @@
 
     <div class="Scheda-prodotto">
 
-        <div class="immagine"><img
+        <div class="immagine_"><img
                 src="https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8MjY5NDYwfGltYWdlL2pwZWd8aDVhL2gyZS8xNDQ0ODE4NDY1NTkwMi5qcGd8MTFmNGY0NzVhYmM2MThiZTExZTM0ZDIwOTRjODY3ZmE5NjFiMzUzMDA3M2I4MjFhMWZiZGExMDRlZmVhYmFlMA/lenovo-laptop-thinkpad-x380-2-in-1-1.jpg"
-                alt=""></div>
+                alt="Lenovo ThinkPad X380 Yoga" class="computer-img"></div>
 
         <div class="informazioni">
 
             <h2 class="nome-laptop"><b>Lenovo ThinkPad X380 Yoga</b></h2>
 
+            <div class="stelle" aria-label="Valutazione 4 stelle su 5">★★★★☆</div>
+
             <h3 class="prezzo-laptop">1.299,00 €</h3>
+
+            <button class="btn-cart">Aggiungi al carrello</button>
 
             <p class="descrizione-laptop">Il ThinkPad X380 Yoga è un laptop convertibile 2-in-1 da 13,3 pollici. Ha uno
                 schermo touch Full HD che ruota di 360 gradi e una penna attiva inclusa per scrivere e disegnare. Pesa
@@ -69,38 +73,36 @@
 
             </table>
 
-            <button id="btn-laptop">Aggiungi al carrello</button>
-
         </div>
 
     </div>
     <section id="recensioni">
-        <h2>Lascia una recensione</h2>
+    <h2 id="riga">Lascia una recensione</h2>
 
-        <form action="#" method="post">
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Il tuo nome" maxlength="40" required>
 
-            <label for="nome">Nome"text" id="nome" name="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="nome@esempio.it" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        <label for="stelle">Valutazione:</label>
+        <select id="stelle" name="stelle" required>
+            <option value="">Seleziona</option>
+            <option value="1">★ 1 Stella</option>
+            <option value="2">★★ 2 Stelle</option>
+            <option value="3">★★★ 3 Stelle</option>
+            <option value="4">★★★★ 4 Stelle</option>
+            <option value="5">★★★★★ 5 Stelle</option>
+        </select>
 
-                <label for="stelle">Valutazione:</label>
-                <select id="stelle" name="stelle" required>
-                    <option value="">Seleziona</option>
-                    <option value="1">★ 1 Stella</option>
-                    <option value="2">★★ 2 Stelle</option>
-                    <option value="3">★★★ 3 Stelle</option>
-                    <option value="4">★★★★ 4 Stelle</option>
-                    <option value="5">★★★★★ 5 Stelle</option>
-                </select>
+        <label for="messaggio">Recensione:</label>
+        <textarea id="messaggio" name="messaggio" rows="5" maxlength="500" placeholder="Cosa pensi di questo prodotto?" required></textarea>
 
-                <label for="messaggio">Recensione:</label>
-                <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+        <button class="btn-recensione" type="submit">Invia recensione</button>
 
-                <button type="submit">Invia recensione</button>
-
-        </form>
-    </section>
+    </form>
+</section>
 
     <footer>
         <p>&copy; 2026 E-Commerce Tech </p>
